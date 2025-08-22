@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amin Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: midnightblue;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form label, form input, form button {
+            margin: 5px 0;
+        }
+        .contact-info {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .whatsapp-link {
+            color: cyan;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>your ultimate web solution</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <!-- Home Section -->
+            <section id="home">
+                <h2>Welcome to our web <br> &lt;\Scorpion&gt;</h2>
+                <p>We solve the impossible. Contact us if you need help at 
+                    <a href="https://chat.whatsapp.com/Dcuxo08d2w26L3XwVRGH7C" target="_blank" class="whatsapp-link">Scorpion WhatsApp Group</a>.
+                </p>
+            </section>
+
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <img src="img_1_1736280814719.jpg" alt="Smiling person facing forward in a bright indoor setting with a relaxed and friendly expression, background shows a tidy workspace" width="200">
+                <p>Hi, I'm learning HTML!</p>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form action="mailto:amingaladima0@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Team Members</h3>
+                    <p><strong>UMAR MUKTAR (SOBA)</strong><br>
+                        Email: Kaleefasoba@gmail.com<br>
+                        Phone: 07038623914</p>
+                    <p><strong>ALAMIN MOHAMMED GALADIMA (GALADEEMA)</strong><br>
+                        Email: amingaladima0@gmail.com<br>
+                        Phone: 07065581379</p>
+                    <p><strong>USMAN BELLO (RIO)</strong><br>
+                        Email: uthmanvello3260@gmail.com<br>
+                        Phone: 08032606099</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 My WEB</p>
+        </footer>
+    </div>
+</body>
+</html>
